@@ -20,6 +20,13 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
 - olist_order_reviews_dataset.csv
 - olist_order_items_dataset.csv
 
+## Ordem para execução:
+1. Rodar jupyter notebook com os dois arquivos para geração do csv processado.
+2. Gerar embeddings com embeddings.py (esta etapa precisa da geração do csv processado).
+3. Gerar repostas do LLM com sentiment_analysis.py.
+4. Criar API com main.py.
+5. Testar API. 
+
 ## 🚀 Etapa 1: Análise Exploratória e RAG
 
 ### 📄 `exploratory.py`
