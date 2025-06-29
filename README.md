@@ -34,7 +34,7 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
 - Nesta etapa, fiz uma análise individual de cada dataset para verificar colunas que poderiam trazer informações importantes, e analisar qual chave única usaria para relacionar ambas planilhas.
 - Esta análise inicial foi importante para entender o contexto dos dados e verificar qual a melhor forma de unir as duas tabelas sem perder informações valiosas.
 - Este arquivo está dividido em:
-  - *Análise Exploratória:* verificação do número de linhas, colunas, valores nulos, duplicados, notas mais frequentes e análises estatísticas de variáveis
+  - *Análise Exploratória:* verificação do número de linhas, colunas, valores nulos, duplicados, notas mais frequentes e análises estatísticas de variáveis.
   - *Processamento do texto:* com técnicas de NLP, algumas pontuações foram removidas assim como caracteres especiais que poderiam prejudicar o entendimento do modelo.
   - *Salvamento de arquivo processado:* nesta etapa, o arquivo que será utilizado para geração de embeddings e análise de sentimentos é salvo.
   - *Testes de embeddings:* aqui, usei esse espaço para testar se as embeddings foram criadas corretamente.
@@ -43,9 +43,9 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
 
 ### 📄 `embeddings.py`
 **Objetivo Principal:** Geração de embeddings para os textos e armazenamento no banco vetorial utilizando ChromaDB
-- Utilizei um modelo de embedding pré-treinado (paraphrase-multilingual-MiniLM-L12-v2), que performa bem com a lingua portuguesa
-- Processei os textos dos reviews em lotes para otimizar performance
-- Salvei os embeddings junto com metadados (product_id, review_id, score)
+- Utilizei um modelo de embedding pré-treinado (paraphrase-multilingual-MiniLM-L12-v2), que performa bem com a lingua portuguesa.
+- Processei os textos dos reviews em lotes para otimizar performance.
+- Salvei os embeddings junto com metadados (product_id, review_id, score).
 
 ## 🧠 Etapa 2: Análise de Sentimentos com LLM
 
@@ -61,13 +61,13 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
 
 ### 📄 `main.py`
 **Objetivo:** Criação de um servidor web com FastAPI
-- A API implementa endpoint `/analyze_sentiment` com método POST;
-- Valida entrada (product_id deve ser string não vazia)
-- Integra com o sentiment_analyzer para processamento
-- Implementa tratamento de erros e respostas padronizadas
-- Adiciona logging para monitoramento e debugging
-- Inclui documentação automática Swagger/OpenAPI
-- Implementa rate limiting para evitar sobrecarga
+- A API implementa endpoint `/analyze_sentiment`.
+- Valida entrada (product_id deve ser string não vazia).
+- Integra com o sentiment_analyzer para processamento.
+- Implementa tratamento de erros e respostas padronizadas.
+- Adiciona logging para monitoramento e debugging.
+- Inclui documentação automática Swagger/OpenAPI.
+- Implementa rate limiting para evitar sobrecarga.
 - Retorna resposta JSON estruturada com a seguinte estrutura:
 
 ```json
