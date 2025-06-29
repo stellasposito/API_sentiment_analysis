@@ -1,4 +1,4 @@
-# 🛍️ Analisador de Sentimentos 
+# 😃 Analisador de Sentimentos 😠
 
 ## 📋 Descrição do Projeto
 
