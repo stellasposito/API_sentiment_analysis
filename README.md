@@ -74,10 +74,11 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
 {
   "product_id_1": [
     {
-      "review_id": "abc123",
-      "review_text": "Produto excelente, recomendo!",
-      "review_score": 5,
-      "order_id": "order_456"
+      "sentiment": "Neutro",
+      "summary": "Nenhum review encontrado para este produto",
+      "positive_points": [],
+      "negative_points": [],
+      "top_reviews": [],
     }
   ]
 }
