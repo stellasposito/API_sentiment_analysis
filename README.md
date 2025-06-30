@@ -75,10 +75,10 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
   "product_id_1": [
     {
       "sentiment": "Neutro",
-      "summary": "Nenhum review encontrado para este produto",
-      "positive_points": [],
-      "negative_points": [],
-      "top_reviews": [],
+      "summary": "Resumo dos principais reviews",
+      "positive_points": Pontos positivos,
+      "negative_points": Pontos negativos,
+      "top_reviews": Reviews mais relevantes,
     }
   ]
 }
