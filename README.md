@@ -45,7 +45,7 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
 **Objetivo Principal:** Geração de embeddings para os textos e armazenamento no banco vetorial utilizando ChromaDB
 - Utilizei um modelo de embedding pré-treinado (paraphrase-multilingual-MiniLM-L12-v2), que performa bem com a lingua portuguesa.
 - Processei os textos dos reviews em lotes para otimizar performance.
-- Salvei os embeddings junto com metadados (product_id, review_id, score).
+- Salvei os embeddings junto com metadados (product_id, review_id, score) no banco vetorial criado.
 
 ## 🧠 Etapa 2: Análise de Sentimentos com LLM
 
