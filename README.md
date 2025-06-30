@@ -38,7 +38,7 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
   - *Processamento do texto:* com técnicas de NLP, algumas pontuações foram removidas assim como caracteres especiais que poderiam prejudicar o entendimento do modelo.
   - *Salvamento de arquivo processado:* nesta etapa, o arquivo que será utilizado para geração de embeddings e análise de sentimentos é salvo.
   - *Testes de embeddings:* aqui, usei esse espaço para testar se as embeddings foram criadas corretamente.
-  - *Análise de sentimentos:* antes de utilizar LLM para analisar e gerar resumos dos reviews, criei uma regra de análise de sentimentos com base no review e na nota, apenas para teste de classificação de sentimento pelo modelo nlptown/bert-base-multilingual-uncased-sentiment.
+  - *Análise de sentimentos:* antes de utilizar LLM para analisar e gerar resumos dos reviews, criei uma regra de análise de sentimentos com base no review e na nota, apenas para teste de classificação de sentimento pelo modelo nlptown/bert-base-multilingual-uncased-sentiment, e testei uma busca vetorial por similaridade.
   - *Testes LLM:* aqui, vários modelos disponíveis no Hugghing Face foram testados, até encontrar o que melhor se adaptou aos dados. Por utilizar versões gratuitas e por questões de memória do meu CPU, precisei dividir em duas tarefas de dois modelos diferentes - um para resumir e outro para classificar os reviews.
 
 ### 📄 `embeddings.py`
