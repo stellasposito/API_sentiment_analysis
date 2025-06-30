@@ -29,7 +29,7 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
 
 ## 🚀 Etapa 1: Análise Exploratória e RAG
 
-### 📄 `exploratory.py`
+### 📄 `exploratory.ipynb`
 **Objetivo Principal:** Importante para conseguir relacionar uma review com um product_id e realizar testes antes de rodar scripts
 - Nesta etapa, fiz uma análise individual de cada dataset para verificar colunas que poderiam trazer informações importantes, e analisar qual chave única usaria para relacionar ambas planilhas.
 - Esta análise inicial foi importante para entender o contexto dos dados e verificar qual a melhor forma de unir as duas tabelas sem perder informações valiosas.
