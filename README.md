@@ -7,7 +7,7 @@ Este projeto implementa um analisador de sentimentos para reviews de produtos ut
 ## 🏗️ Arquitetura do Sistema
 
 ```
-📁 sentiment-analyzer/
+📁 API_sentiment_analysis/
 ├── embeddings.py
 ├── exploratory.ipynb
 ├── main.py
